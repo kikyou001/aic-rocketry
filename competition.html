@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="rocket">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Algerian Rocketry Interuniversity Competition</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+       <div class="nomSite">Algerian Rocketry Interuniversity Competition</div>
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ARIC</a>
+    </div>  
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="competition.html" >Competition</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!---->
+<div class="container">
+<div class="box">
+   <div class="row">
+            <div class="col-lg-12">
+                <hr>
+                    <h2 class="intro-text text-center">
+                        Overview of this first edition 2016-2017
+                    </h2>
+                <hr>
+                    <p>
+                      The idea of ​​an annual inter-university competition in mechanical engineering (aerospace application)
+                      received a very favorable reception among several professors of Algerian universities. This scientific
+                      activity aims to offer students an opportunity to put into practice their theoretical knowledge 
+                      acquired.
+                      </p>
+                      <p>
+                    This edition consists of the design of a high power amateur rocket with a recovery system. 
+                    It will cover four areas: 
+                    </p>
+                    <p>1) Design and simulation</p>
+                    <p>2) Realization </p>
+                    <p>3) Validation test of design concept</p>
+                    <p>4) Safety aspect</p>
+                    <p>
+                    The students are asked to form teams or a specification is provided to them. A drive is available 
+                    including documentation needed to complete the required tasks. Examination of the security test 
+                    is provided as students will be examined and a pre-established grade will be required as a 
+                    passing grade or the team will be disqualified.
+                    </p>
+                    <p>
+                    The competition will be organized over a day. Students will present their work to a committee composed 
+                    of several jurors after the passing of the security examination. A clear and detailed scoring system 
+                    will be published on the site.
+                    <p>
+                      
+                        Nota:<strong> No Launch is authorized or will be performed in this 2017 edition.
+                      </strong>
+                    </p>
+            </div>
+   </div>
+</div>
+
+
+<div class="box">
+        <div class="row">
+            <div class="col-lg-12">
+                 <hr>
+      <h2 class="intro-text text-center">
+                  Your team
+      </h2>
+      <hr>
+                <p>A team of four (4) people minimum will represent a university or school.
+                    However, it's strongly recommended that two pairs should be formed by team:
+                     <strong>Aerodynamic/propulsion</strong> and <strong>structure.</strong>
+                </p>
+                <p>The members of the team must be registred in a Master degree. A team may have additional 
+                    L3 members or scientific club members.</p>
+            </div>
+        </div>
+</div>
+
+<!--begin teams-->
+<div class="box" ng-controller="listCtrl as list">
+      <div class="row">  
+                 <hr>
+      <h2 class="intro-text text-center">
+                  Teams participating Edition 2016-2017  
+      </h2>
+      <hr>
+        <div class="col-sm-6 col-md-6" ng-repeat="team in list.teamsData">
+          <div class="well well-sm">
+              <div class="row">
+                  <div class="col-md-4">
+                    
+                        <img ng-src={{team.img_url}} class="img-responsive img-rounded" alt="...">
+                  
+                  </div>
+                  <div class="col-md-8">
+                      <h4>{{team.university}}</h3>
+                      <p><strong>Team: </strong>{{team.team}}</p>
+                      <p><strong>University: </strong><a target = "_blank" href={{team.univ_url}}>{{team.univ_url}}</a></p>
+                      <button class="btn btn-info img-full" data-toggle="collapse" data-target="#{{team.university}}">Members</button>
+                      <div class="collapse" id="{{team.university}}">
+                        <ul class="list-group"> 
+                          <li class="list-group-item" ng-repeat="professor in team.prof">
+                          <a href="mailto:{{professor.email}}">{{professor.name}}</a>
+                          </li>
+                        </ul>
+                        <ul class="list-group"> 
+                          <li class="list-group-item" ng-repeat="member in team.members">{{member.name}}</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+</div>
+<!--end teams-->
+
+</div>
+<footer>
+      <div class="container-flw">
+        <div class="row">
+            <div class="col-lg-12 text-center social-foot">
+            <p>Are you social? Come and join us! </p>
+                <button id="facebook"><span class="fa fa-facebook"></span></button>
+                <button id="twitter"><span class="fa fa-twitter"></span></button>
+                <button id="pinterest"><span class="fa fa-pinterest-p"></span></button>
+                <button id="whatsapp"><span class="fa fa-whatsapp"></span></button>
+            </div>
+        </div>
+      </div>
+    </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="angular/app.js"></script>
+    <script src="angular/controllers/list.js"></script>
+  </body>
+</html>
