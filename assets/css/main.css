@@ -142,7 +142,7 @@ footer p {
 	font-family: "open sans", Arial, sans-serif;
 }
 .blogpost h4 {
-	font-size: 24px;
+	font-size:1.85vw;
 	font-style: italic;
 	text-align: center;
 	font-weight: bold;
@@ -240,7 +240,7 @@ footer p {
 
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
   section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -304,6 +304,7 @@ section {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
+	height:80%;
     content: '';
     background-color: #f1f1f1; }
   .timeline > li {
@@ -349,7 +350,7 @@ section {
         margin-top: 12px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
-      padding: 0 20px 0 100px;
+      padding: 0 0 0 100px;
       text-align: left; }
       .timeline > li.timeline-inverted > .timeline-panel:before {
         right: auto;
@@ -716,4 +717,9 @@ img::-moz-selection {
 
   .imgradius{
   	  border-radius: 50%;
+  }
+
+
+  .img{
+  	  max-width:100%;
   }
