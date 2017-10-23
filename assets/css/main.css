@@ -142,7 +142,7 @@ footer p {
 	font-family: "open sans", Arial, sans-serif;
 }
 .blogpost h4 {
-	font-size:1.85vw;
+	font-size: 1.85vw;
 	font-style: italic;
 	text-align: center;
 	font-weight: bold;
@@ -318,9 +318,9 @@ section {
       clear: both; }
     .timeline > li .timeline-panel {
       position: relative;
-      float: right;
-      width: 100%;
-      padding: 0 20px 0 100px;
+      float: center;
+      width: 150%;
+      padding: 0 25px 0 100px;
       text-align: left; }
       .timeline > li .timeline-panel:before {
         right: auto;
@@ -349,8 +349,8 @@ section {
         line-height: 14px;
         margin-top: 12px; }
     .timeline > li.timeline-inverted > .timeline-panel {
-      float: right;
-      padding: 0 0 0 100px;
+      float: center;
+      padding: 0 25px 0 100px;
       text-align: left; }
       .timeline > li.timeline-inverted > .timeline-panel:before {
         right: auto;
@@ -722,4 +722,8 @@ img::-moz-selection {
 
   .img{
   	  max-width:100%;
+  }
+
+  .tw{
+  	  padding:0 10px 0 10px;
   }
