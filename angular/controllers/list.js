@@ -59,7 +59,7 @@
             {
                 university:"ENPC",
                 team:"",
-                img_url:"https://lh3.googleusercontent.com/KnqtnBJiSYDp2PxT2JN2PoIbZn8rVF6xc_ZMKDzAQ0E8aRJDRYm0M3pawzq9mIKXrXSi5shnUy6YUiGxN9EAdL4GuC0iofh9V2Nz4UPr1jRRM6GbSgfvypWFKS_U2CiGqBvYr1ccS0etHzfcdZE2FrkYASpvPgCcKxLUD9OJIdXq7Tj7yRwZYyQZ46uabiWa2tL2dK1gf4Tr-11VMFscANFn7dO9CbNQj527Z0SjhyUB2Z5WF3eZUhtQgM2fXp4r58Vk3yr755wdiDSXOEklTks0u0NIP461J-HYwrMHjNi5WHapwtsMINUwpsVO9ntKHBYuC-avsbGOCmN5fYDWNvaOiG5mTqT2iS5zaBSpucvQ91_qLekMBYNr4KPR-6LMYORdIC8a9oHfCvsNK1RwlH6cWq59KFzLhonNsQkbuNwH2Q1Il6SU0Hj1iiAC68l1VTUqG19G4H0N8dCYgOID44cuUB7-vhUBbCEs70wlEhXzzxw4Deej-p1iuEfPPkW_CjuwlsrExNlJ0YivuWaXfcaTs21cptDrOQM3vOCIZ1Z4AQxieUDQ1haurP2QzD9tEs2uPhjtIL11IpRvbZjh3es7IHvQF_zM7lgqqdYhj486rYS-bPlUUhW7-DWw8Jjp8fzJtAyeKs8-7yvDmD6TrbZX7M9tT9UV4yM=w500-h379-no",
+                img_url:"https://lh3.googleusercontent.com/LgFenbry9d4M8fmKndEotwzRQ_Vzx1CGgX9XJ_9MLuv3eNtPttRLIYWnilL7xnSPbh2qSySOjjkCzO-HoG3kxlc_CXGAGpeuP5Crs6Vk4YFsUTcp8AOTQOC_HkpDfK9Uoc5PLdx-vTnoktylor1PW9R7GSBZ9NAykzCrZpz2TT1OXk7O2gjMeFYz_VfLgrcwuqccPoX5XBJqCoKu2vim7U2PGUtpdZA4OB4rieZ68jrDOetg84URMLAKq2sExD8gHFgNQt6zAfRQwS30jqpCj2JFe7jIfQYbYBj9bzh86KRid0SvjBIkUQHJrXxlSCiR8-HkI0o9zREfeLETJWrF4_4e1hSzUrTsrZh9ygfO5BzWpSHyHv6cZrMClj7kzplVOaSkH0FYvv-oqmP7kAMDJNLezoXy37_v0R3_yPY3_UVnKWV2Zd3WyXryebf0ZNKOJmzmbfQ3UauLLbVDnKBGoKx-hnxyp7iXY0KzertxHdqsG3Ahe7CGO-jFMNVLpgwoILjduXzEiHz1Sb4YYon6sSmZlr6yyx51bvl4_8NJeWxjiqTvWxcqSV597UQnxfWkYG7yT-4oJwCtO8oieivW0fTTteGpQ8RmsaQWQ56mpRsHPLiY2ssLTQ2bVmNM6ecVZd80Oxja-i2KFNFeF7btYAmvRXQkTx6uNJE=w219-h277-no",
                 univ_url:"http://enp-constantine.dz/",
                 rocket_name:"",
                 prof:[
